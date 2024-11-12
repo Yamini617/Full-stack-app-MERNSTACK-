@@ -1,0 +1,75 @@
+###
+get http://localhost:3000/admin-api
+
+###
+post http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi",
+    "email":"ravi@gamil.com",
+    "address":{
+        "city":"hyd",
+        "pincode":522415
+    }
+}
+
+
+###
+post http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "userType":"seller",
+    "username":"rahul",
+    "password":"rahul",
+    "email":"rahul@gamil.com",
+    "address":{
+        "city":"Chennai",
+        "pincode":52241567
+    }
+}
+
+
+###
+post http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "userType":"seller",
+    "username":"rahul",
+    "password":"rahul"
+  
+}
+
+
+###
+post http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi"
+  
+}
+
+
+###
+post http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "userType": "admin",
+  "username": "admin",
+  "password": "admin"
+  
+}
+
+
+
+
+
+
